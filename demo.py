@@ -88,7 +88,7 @@ with demo:
                 lines=4,
                 label="Prompt",
                 show_copy_button=True,
-                value="An enchanted forest scene with ancient trees, glowing mushrooms, and an ethereal mist",
+                value="A colorful autumn park with leaves of orange, red, and yellow scattered across a winding path.",
             )
             pf_btn = gr.Button("Compute PF-US", variant="primary")
         with gr.Row():

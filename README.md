@@ -55,6 +55,7 @@ Once the Gradio interface launches in your browser:
 
 * **Generate the Final Image:** Click the "Generate Image" button. The system will use the perspective fields and the prompt to synthesize a final image.
 
+*The demo has been tested on a NVIDIA GeForce RTX 4070 Ti SUPER (16 GB)*
 
 ### 📖 Citations
 

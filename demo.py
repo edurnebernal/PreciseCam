@@ -107,4 +107,4 @@ with demo:
     )
     inf_btn.click(inference, inputs=[prompt, condition_img], outputs=[result_img])
 
-demo.launch(share=False)
+demo.launch(share=True)

@@ -98,7 +98,10 @@ def main():
             roll, yaw, pitch, vfov, xi = params
 
             # Obtain image crop and PF-US
-            image, pf_us = utils.obtain_pf(panorama, roll, yaw, pitch, vfov, xi, h, w)
+            try:
+                image, pf_us = utils.obtain_pf(panorama, roll, yaw, pitch, vfov, xi, h, w)
+            except Exception as e: # Handle any exceptions that occur during the cropping process due to invalid set of parameters
+                continue
 
             # Save PF-US and blend images
             image_filename = os.path.join(output_dir, "images", f"image_{i}.png")

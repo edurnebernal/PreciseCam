@@ -30,9 +30,12 @@ The model is available on Hugging Face: [`edurnebb/PreciseCam`](https://huggingf
 To set up the environment with Conda and install dependencies, simply run:
 
 ```bash
+conda create -n precisecam --yes
+conda activate precisecam
+
 bash environment_setup.sh
 ```
-**[Diffusers](https://huggingface.co/docs/diffusers/index)** library has beeen customed to support PreciseCam. Adapted fork:: [`edurnebernal/diffusers-adapted`](https://github.com/edurnebernal/diffusers-adapted) 
+**[Diffusers](https://huggingface.co/docs/diffusers/index)** library has been customed to support PreciseCam. Adapted fork:: [`edurnebernal/diffusers-adapted`](https://github.com/edurnebernal/diffusers-adapted) 
 
 
 ### 🧪 Demo

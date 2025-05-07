@@ -61,7 +61,7 @@ Once the Gradio interface launches in your browser:
 
 * **Generate the Final Image:** Click the "Generate Image" button. The system will use the perspective fields and the prompt to synthesize a final image.
 
-*The demo has been tested on a NVIDIA GeForce RTX 4070 Ti SUPER (16 GB)*
+> The demo has been tested on a NVIDIA GeForce RTX 4070 Ti SUPER (16 GB).
 
 ---
 
@@ -108,6 +108,21 @@ output_dir/
 ├── pf_us/           # Corresponding PF-US maps
 └── prompts.jsonl    # (Optional) BLIP-2 prompts with image and PF-US paths
 ```
+---
+### 🛠️ Training
+
+To train the PreciseCam model, we followed the ControlNet approach to incorporate camera view control to Stable Diffusion XL through PF-US.
+
+All training parameters and configurations are defined in the provided script:
+
+```
+bash train_PreciseCam.sh
+```
+
+This script sets up the environment, defines all necessary hyperparameters, and launches training using `accelerate` and our adapted diffusers fork.
+
+> ⚠️ Note: Ensure your dataset is preprocessed and available in the correct structure (see the 🖼️ Dataset section). The training was tested on a single GPU with at least 40GB of VRAM (NVIDIA A100).
+
 ---
 
 ### 📖 Citations
